@@ -1,7 +1,7 @@
 // INCLUDE THE ROUTES OF THE PRODUCTS
 // REQUIRE EXPRESS AND ROUTE
 const express = require('express');
-const router = express.Route();
+const router = express.Router();
 
 // Require the controllers WHICH WE DID NOT CREATE YET!!
 const product_controller = ('../controllers/product.controller');
