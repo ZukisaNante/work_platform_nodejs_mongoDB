@@ -9,8 +9,14 @@
 ## Progamming Languages
 >- NodeJS, MongoDB, 
 ---
+## Packages
+>- ExpressJS: A flexible Node.JS web appplication with many features for web and mobile applications.
+>- Mongoose: The mongoDB ODM for Node.JS.
+>- Body-parser: used to handle JSON requests.
+---
 ## License
 @---
 ---
 ## Special Thanks
 >- @purplepanda.be
+>- @codeburst.io
