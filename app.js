@@ -3,12 +3,12 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 // IMPORTS ROUTES FOR THE PRODUCTS
-const product = require('./routes/product.route');
+//const product = require('./routes/product.route');
 
 
 // INITIALIZE EXPRESS APP
 const app = express();
-app.use('./products', product);
+//app.use('./products', product);
 
 // ASSIGN A PORT NUMBER TO EXPRESS APP
 let port = 1234;
