@@ -1,0 +1,27 @@
+// APP.JS
+const express = require('express');
+const bodyParser = require('body-parser');
+
+// IMPORTS ROUTES FOR THE PRODUCTS
+//const product = require('./routes/product.route');
+
+
+// INITIALIZE EXPRESS APP
+const app = express();
+
+// PARSE REQUESTS OF CONTENT-TYPE - APPLICATION/X-WWW-FORM-URLENCODED
+app.use(bodyParser.urlencoded({ extended: true }));
+
+// PARSE REQUESTS OF CONTENT-TYPE - APPLICATION/JSON
+app.use(bodyParser.json());
+
+// DEFINE A SIMPLE ROUTE
+app.get('/', (reg, res) => {
+    res.json({ 'message': 'Welcome to our Job Platform!' });
+});
+
+// ASSIGN A PORT NUMBER TO EXPRESS APP AND LISTEN FOR REQUESTS
+let port = 1234;
+app.listen(port, () => {
+    console.log('Server is up and running ' + port);
+});
