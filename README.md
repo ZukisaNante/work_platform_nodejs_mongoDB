@@ -17,7 +17,6 @@
 >- Two body-parser middlewares using express’s app.use() method.
 >- A middleware is a function that has access to the request and response objects.
 ---
----
 ## License
 @---
 ---
