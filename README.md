@@ -14,8 +14,8 @@
 >- Mongoose: The mongoDB ODM for Node.JS.
 >- Body-parser: used to handle JSON requests and creates a req.body object that we can access in our routes.
 ---
-Two body-parser middlewares using express’s app.use() method.
-A middleware is a function that has access to the request and response objects.
+>- Two body-parser middlewares using express’s app.use() method.
+>- A middleware is a function that has access to the request and response objects.
 ---
 ---
 ## License
