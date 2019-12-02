@@ -18,10 +18,32 @@ MongoClient.connect(url, function(err, db) {
 MongoClient.connect(url, function(err, db) {
     if (err) throw err;
     var dbo = db.db("JOBS");
-    var myobj = { name: "Company Inc", address: "Highway 37" };
-    dbo.collection("customers").insertOne(myobj, function(err, res) {
+    var myobj = [
+        { _id: 1, title: 'web developer', description: 'programming', skills: 'html, css', education: 'hbo', contact: '039494', company: 'panda' },
+
+        { _id: 2, title: 'manager', description: 'Description', skills: 'skills', education: 'education', contact: 'contact', company: 'company' },
+
+        { _id: 3, title: 'software engineering', description: 'engineering', skills: 'design', education: 'wso', contact: '3435435', company: 'purple' },
+
+        { _id: 4, title: 'sales', description: 'sell', skills: 'sales and marketing', education: 'hbo', contact: '676767', company: 'purple panda' }
+
+    ];
+    dbo.collection("customers").find({}).toArray(function(err, result) {
         if (err) throw err;
-        console.log("1 document inserted");
+        console.log(result);
+        db.close();
+    });
+});
+
+// FIND DOCUMENT 
+MongoClient.connect(url, function(err, db) {
+    if (err) throw err;
+    var dbo = db.db("JOBS");
+    dbo.collection("customers").find({}).toArray(function(err, result) {
+        // TO BE INSERTED AFTER .find({}, { projection: { _id: 0 } })
+        if (err) throw err;
+        //console.log(result[2].title);
+        console.log(result);
         db.close();
     });
 });
