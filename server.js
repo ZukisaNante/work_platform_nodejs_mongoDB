@@ -15,8 +15,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // PARSE REQUESTS OF CONTENT-TYPE - APPLICATION/JSON
 app.use(bodyParser.json());
 
+
 // CONFIGURING THE DATABASE
-const dbConfig = require('./config/database.config');
+const dbConfig = require('./config/database.config.js');
 const mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
@@ -37,7 +38,7 @@ app.get('/', (reg, res) => {
 });
 
 // ASSIGN A PORT NUMBER TO EXPRESS APP AND LISTEN FOR REQUESTS
-let port = 1234;
+let port = 3000;
 app.listen(port, () => {
     console.log('Server is up and running ' + port);
 });
