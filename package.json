@@ -1,0 +1,19 @@
+{
+  "name": "work_platform_nodejs_mongodb",
+  "version": "1.0.0",
+  "description": "Work Platform Dashboard",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZukisaNante/work_platform_nodejs_mongoDB.git"
+  },
+  "author": "Zukisa NANTE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZukisaNante/work_platform_nodejs_mongoDB/issues"
+  },
+  "homepage": "https://github.com/ZukisaNante/work_platform_nodejs_mongoDB#readme"
+}
