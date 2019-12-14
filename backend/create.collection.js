@@ -36,7 +36,7 @@ MongoClient.connect(url, function(err, db) {
 }); */
 
 // FIND DOCUMENT 
-/* MongoClient.connect(url, function(err, db) {
+MongoClient.connect(url, function(err, db) {
     if (err) throw err;
     var dbo = db.db("VACANIES");
     dbo.collection("vacancies").find({}).toArray(function(err, result) {
@@ -46,7 +46,7 @@ MongoClient.connect(url, function(err, db) {
         console.log(result);
         db.close();
     });
-}); */
+});
 
 // QUERY
 /* s */
