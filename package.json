@@ -1,26 +1,30 @@
 {
-  "name": "work_platform_nodejs_mongodb",
-  "version": "1.0.0",
-  "description": "Work Platform Dashboard",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ZukisaNante/work_platform_nodejs_mongoDB.git"
-  },
-  "author": "Zukisa NANTE",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ZukisaNante/work_platform_nodejs_mongoDB/issues"
-  },
-  "homepage": "https://github.com/ZukisaNante/work_platform_nodejs_mongoDB#readme",
-  "dependencies": {
-    "bcrypt": "^3.0.7",
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "mongoose": "^5.8.1"
-  }
+    "name": "work_platform_nodejs_mongodb",
+    "version": "1.0.0",
+    "description": "Work Platform Dashboard",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon  app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ZukisaNante/work_platform_nodejs_mongoDB.git"
+    },
+    "author": "Zukisa NANTE",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ZukisaNante/work_platform_nodejs_mongoDB/issues"
+    },
+    "homepage": "https://github.com/ZukisaNante/work_platform_nodejs_mongoDB#readme",
+    "dependencies": {
+        "bcrypt": "^3.0.7",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "mongod": "^2.0.0",
+        "mongodb": "^3.4.0",
+        "mongoose": "^5.8.1",
+        "nodemon": "^2.0.2"
+    }
 }
